@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 編集ポイント：ページタイトル -->
+  <title>北海学園札幌高等学校｜運動会 2026</title>
+  <meta name="description" content="北海学園札幌高等学校 運動会の案内ホームページです。タイムテーブル、競技一覧、注意事項、アクセス情報、速報情報を掲載しています。" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="トップへ戻る">
+        <span class="logo-mark">運</span>
+        <span class="logo-text">
+          <!-- 編集ポイント：学校名 -->
+          <span class="logo-school">北海学園札幌高等学校</span>
+          <span class="logo-event">運動会 2026</span>
+        </span>
+      </a>
+
+      <!-- スマホ用ハンバーガーメニュー -->
+      <button class="menu-button" type="button" aria-controls="global-nav-list" aria-expanded="false">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="visually-hidden">メニューを開閉する</span>
+      </button>
+
+      <nav class="global-nav" aria-label="サイト内メニュー">
+        <ul id="global-nav-list" class="nav-list">
+          <li><a href="#news">お知らせ</a></li>
+
+          <!-- 編集ポイント：速報ページのURLを href に入れてください -->
+          <li>
+            <a
+              class="nav-live"
+              href="https://tkhr4940-svg.github.io/sports-event-live/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="速報ページを別タブで開く"
+            >
+              速報
+            </a>
+          </li>
+
+          <li><a href="#timetable">タイムテーブル</a></li>
+          <li><a href="#sports">競技</a></li>
+          <li><a href="#classes">クラス</a></li>
+          <li><a href="#notes">注意事項</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- メインビジュアル -->
+    <section id="top" class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-label">Hokkai Gakuen Sapporo High School</p>
+
+          <!-- 編集ポイント：行事名・テーマ -->
+          <h1>運動会 2026</h1>
+          <p class="hero-copy">全力・団結・青春</p>
+
+          <div class="hero-info">
+            <!-- 編集ポイント：開催日・場所 -->
+            <p><span>開催日</span>2026年9月11日(金)</p>
+            <p><span>会場</span>北海道立総合体育センター(北海きたえーる)</p>
+            <p><span>対象</span>生徒・教職員</p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#timetable">タイムテーブルを見る</a>
+            <a class="button button-outline" href="#access">アクセスを確認</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="開催日までのカウントダウン">
+          <div class="hero-slider" data-slider aria-label="運動会の画像スライドショー">
+  <div class="hero-slider-track">
+    <div class="hero-slide is-active">
+      <img src="images/slide-1.jpg" alt="運動会のイメージ画像1">
+    </div>
+
+    <div class="hero-slide">
+      <img src="images/slide-2.jpg" alt="運動会のイメージ画像2">
+    </div>
+
+    <div class="hero-slide">
+      <img src="images/slide-3.jpg" alt="運動会のイメージ画像3">
+    </div>
+  </div>
+
+  <!-- 前の画像へ -->
+  <button class="slider-button slider-button-prev" type="button" data-slider-prev aria-label="前の画像へ">
+    ‹
+  </button>
+
+  <!-- 次の画像へ -->
+  <button class="slider-button slider-button-next" type="button" data-slider-next aria-label="次の画像へ">
+    ›
+  </button>
+
+  <!-- 下の丸ボタンはJavaScriptで自動生成されます -->
+  <div class="slider-dots" data-slider-dots aria-label="画像を選択"></div>
+</div>
+
+
+          <div class="countdown" data-countdown>
+            <p class="countdown-title" id="countdown-message">開催日まで</p>
+            <div class="countdown-grid">
+              <div>
+                <strong id="countdown-days">--</strong>
+                <span>日</span>
+              </div>
+              <div>
+                <strong id="countdown-hours">--</strong>
+                <span>時間</span>
+              </div>
+              <div>
+                <strong id="countdown-minutes">--</strong>
+                <span>分</span>
+              </div>
+              <div>
+                <strong id="countdown-seconds">--</strong>
+                <span>秒</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お知らせ -->
+    <section id="news" class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-label">Information</p>
+          <h2>お知らせ</h2>
+          <p>当日の持ち物などのご案内を掲載しています。</p>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <span class="news-tag">持ち物</span>
+            <h3>当日の持ち物</h3>
+            <ul>
+              <li>指定ジャージ上下・クラスTシャツ・上靴</li>
+              <li>タオル・着替え用のTシャツは指定Tシャツ</li>
+              <li>昼食（必要に応じて軽食）・飲み物</li>
+              <li>筆記用具・配布資料</li>
+            </ul>
+          </article>
+
+          <article class="news-card">
+            <span class="news-tag">お願い</span>
+            <h3>見学について</h3>
+            <p>
+              保護者の方の見学はできません。ご来場はお控えください。
+            </p>
+          </article>
+
+          <article class="news-card">
+            <span class="news-tag">連絡</span>
+            <h3>最新情報の確認</h3>
+            <p>
+              スケジュールや注意事項は変更になる場合があります。
+              最新情報は学校からの連絡、または当日の案内をご確認ください。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- タイムテーブル -->
+    <section id="timetable" class="section section-blue">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-label">Schedule</p>
+          <h2>タイムテーブル</h2>
+          <p>時間は予定です。進行状況により変更となる場合があります。</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="timetable-table">
+            <thead>
+              <tr>
+                <th scope="col">時間</th>
+                <th scope="col">内容</th>
+                <th scope="col">場所・メモ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">08:30</th>
+                <td>開会式</td>
+                <td>整列・諸注意・選手宣誓</td>
+              </tr>
+              <tr>
+                <th scope="row">08:50</th>
+                <td>バレーボール</td>
+                <td>クラス対抗／各コート</td>
+              </tr>
+              <tr>
+                <th scope="row">11:00</th>
+                <td>縄跳び</td>
+                <td>団体種目／指定エリア</td>
+              </tr>
+              <tr>
+                <th scope="row">12:15</th>
+                <td>昼休み</td>
+                <td>昼食・休憩</td>
+              </tr>
+              <tr>
+                <th scope="row">13:00</th>
+                <td>リレー</td>
+                <td>クラス代表／応援エリアから観戦</td>
+              </tr>
+              <tr>
+                <th scope="row">14:30</th>
+                <td>閉会式</td>
+                <td>結果発表・表彰・講評</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 競技一覧 -->
+    <section id="sports" class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-label">Events</p>
+          <h2>競技一覧</h2>
+          <p>クラスの団結力と応援の力が試される競技です。</p>
+        </div>
+
+        <div class="event-grid">
+          <article class="event-card">
+            <div class="event-icon">🏐</div>
+            <h3>バレーボール</h3>
+            <p>チームワークと声かけが勝利のカギ。クラス全員で応援しましょう。</p>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon">🪢</div>
+            <h3>縄跳び</h3>
+            <p>息を合わせてジャンプ。集中力とリズム感が大切な団体競技です。</p>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon">🏃</div>
+            <h3>リレー</h3>
+            <p>運動会の花形競技。最後まであきらめず、バトンをつなぎます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- チーム・クラス紹介 -->
+    <section id="classes" class="section section-orange">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-label">Classes</p>
+          <h2>チーム・クラス紹介</h2>
+          <p>各学年・各クラスの参加一覧です。</p>
+        </div>
+
+        <div class="class-groups">
+          <article class="class-group">
+            <h3>1年生</h3>
+            <div class="class-list">
+              <span>1年A組</span>
+              <span>1年B組</span>
+              <span>1年C組</span>
+              <span>1年D組</span>
+              <span>1年E組</span>
+              <span>1年F組</span>
+              <span>1年G組</span>
+              <span>1年H組</span>
+              <span>1年I組</span>
+              <span>1年J組</span>
+              <span>1年K組</span>
+              <span>1年L組</span>
+              <span>1年M組</span>
+              <span>1年N組</span>
+            </div>
+          </article>
+
+          <article class="class-group">
+            <h3>2年生</h3>
+            <div class="class-list">
+              <span>2年A組</span>
+              <span>2年B組</span>
+              <span>2年C組</span>
+              <span>2年D組</span>
+              <span>2年E組</span>
+              <span>2年F組</span>
+              <span>2年G組</span>
+              <span>2年H組</span>
+              <span>2年I組</span>
+              <span>2年J組</span>
+              <span>2年K組</span>
+            </div>
+          </article>
+
+          <article class="class-group">
+            <h3>3年生</h3>
+            <div class="class-list">
+              <span>3年A組</span>
+              <span>3年B組</span>
+              <span>3年C組</span>
+              <span>3年D組</span>
+              <span>3年E組</span>
+              <span>3年F組</span>
+              <span>3年G組</span>
+              <span>3年H組</span>
+              <span>3年I組</span>
+              <span>3年J組</span>
+              <span>3年K組</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 注意事項 -->
+    <section id="notes" class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-label">Rules</p>
+          <h2>注意事項</h2>
+          <p>安全で気持ちのよい運動会にするため、学校のルールやマナーを遵守しましょう！ご協力をお願いします。</p>
+        </div>
+
+        <div class="notes-grid">
+          <article class="note-card">
+            <h3>スマホの使用について</h3>
+            <p>競技場所への持ち込みは禁止です。また、観戦席での使用は、周囲の方の迷惑にならないようご配慮ください。</p>
+          </article>
+
+          <article class="note-card">
+            <h3>ゴミの持ち帰り</h3>
+            <p>会場をきれいに保つため、ゴミは指定のゴミ箱に捨てるようにしましょう。</p>
+          </article>
+
+          <article class="note-card">
+            <h3>立入禁止エリア</h3>
+            <p>競技エリアや関係者以外立入禁止の場所には入らないでください。</p>
+          </article>
+
+          <article class="note-card">
+            <h3>個人情報への配慮</h3>
+            <p>SNS等に写真や動画を投稿する際は、他の生徒や来場者が写り込んでいないか確認してください。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-blue">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-label">FAQ</p>
+          <h2>よくある質問</h2>
+          <p>当日に関するよくある質問をまとめました。</p>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1">
+              保護者は見学できますか？
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div id="faq-answer-1" class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>保護者のご来場はご遠慮ください。ご理解とご協力をお願いいたします。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
+              昼食は必要ですか？
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div id="faq-answer-2" class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>昼休みがあるため、必要に応じて昼食や飲み物を準備してください。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
+              写真撮影はできますか？
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div id="faq-answer-3" class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>スマホでの撮影は学校のルールに従ってください。また、個人情報や肖像権に十分配慮してください。</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- アクセス -->
+    <section id="access" class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-label">Access</p>
+          <h2>アクセス</h2>
+          <p>
+            会場は「北海道立総合体育センター(北海きたえーる)」です。公共交通機関の利用にご協力ください。<br>
+            ※自転車通学の人は、学校の駐輪場に停めてから歩いてご来場ください。（きたえーるに駐輪場はありません）
+          </p>
+        </div>
+
+        <div class="access-grid">
+          <div class="access-info">
+            <h3>会場案内</h3>
+            <dl>
+              <div>
+                <dt>会場</dt>
+                <dd>北海道立総合体育センター(北海きたえーる)</dd>
+              </div>
+              <div>
+                <dt>所在地</dt>
+                <dd>〒062-0905 北海道札幌市豊平区豊平５条１１丁目１−１</dd>
+              </div>
+              <div>
+                <dt>交通手段</dt>
+                <dd>公共交通機関の利用を推奨します。集合時間に遅れないよう余裕をもって移動してください。</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="map-placeholder map-embed" aria-label="北海道立総合体育センター（北海きたえーる）の地図">
+  <iframe
+    title="北海道立総合体育センター（北海きたえーる）のGoogleマップ"
+    src="https://www.google.com/maps?q=北海道立総合体育センター%20北海きたえーる&output=embed"
+    width="100%"
+    height="320"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+  <p class="map-link">
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=北海道立総合体育センター%20北海きたえーる"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Googleマップで大きく見る
+    </a>
+  </p>
+</div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-school">北海学園札幌高等学校</p>
+        <p>運動会 2026 特設ページ</p>
+      </div>
+
+      <div class="footer-contact">
+        <p>お問い合わせ</p>
+        <p>担当：体育科</p>
+      </div>
+    </div>
+
+    <p class="copyright">
+      &copy; 2026 Hokkai Gakuen Sapporo High School. All Rights Reserved.
+    </p>
+  </footer>
+
+  <!-- ページ上部へ戻るボタン -->
+  <button class="back-to-top" type="button" aria-label="ページ上部へ戻る">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
