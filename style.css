@@ -1129,3 +1129,109 @@ button {
     font-size: 1.7rem;
   }
 }
+/* 呼び出しクラス案内 */
+.callout-bar {
+  background: linear-gradient(90deg, #fff7ed, #fff1f2);
+  border-bottom: 1px solid #fed7aa;
+  padding: 10px 16px;
+  position: relative;
+  z-index: 1000;
+}
+
+.callout-bar-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.callout-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background: #ea580c;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  box-shadow: 0 6px 14px rgba(234, 88, 12, 0.22);
+}
+
+.callout-bubble {
+  position: relative;
+  flex: 1;
+  margin: 0;
+  background: #fff;
+  border: 2px solid #fb923c;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  line-height: 1.6;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+.callout-bubble::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 12px solid #fb923c;
+}
+
+.callout-bubble::after {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 10px solid #fff;
+}
+
+.callout-bubble strong {
+  color: #c2410c;
+  font-weight: 800;
+  margin-right: 0.35em;
+}
+
+.callout-bar[hidden] {
+  display: none;
+}
+
+/* スマホ対応 */
+@media (max-width: 640px) {
+  .callout-bar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .callout-bubble {
+    width: 100%;
+    border-radius: 18px;
+  }
+
+  .callout-bubble::before {
+    left: 24px;
+    top: -12px;
+    transform: none;
+    border: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid #fb923c;
+  }
+
+  .callout-bubble::after {
+    left: 26px;
+    top: -8px;
+    transform: none;
+    border: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #fff;
+  }
+}
