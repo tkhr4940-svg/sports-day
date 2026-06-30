@@ -4,7 +4,7 @@
   形式：YYYY-MM-DDTHH:MM:SS+09:00
   例：2026年9月11日 9:00開始 → "2026-09-11T09:00:00+09:00"
 ================================================== */
-const EVENT_DATE = new Date("2026-09-11T08:45:00+08:45");
+const EVENT_DATE = new Date("2026-09-11T08:45:00+09:00");
 
 document.addEventListener("DOMContentLoaded", () => {
   setupMobileMenu();
