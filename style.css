@@ -863,18 +863,45 @@ button {
     display: block;
   }
 
+    /* メニューを開いている間は背面をスクロールさせない */
+  body.menu-open {
+    overflow: hidden;
+  }
+
   .nav-list {
-    position: absolute;
-    top: calc(100% + 10px);
+    position: fixed;
+
+    /*
+      ヘッダーの下から表示。
+      --header-height はスマホ時に 66px に変更されているので、
+      top は 66px + 10px になります。
+    */
+    top: calc(var(--header-height) + 10px);
     right: 16px;
     left: 16px;
+    bottom: 16px;
+
     display: grid;
+    align-content: start;
     gap: 4px;
+
     padding: 12px;
     background: var(--white);
     border: 1px solid var(--line);
     border-radius: 18px;
     box-shadow: var(--shadow);
+
+    /*
+      ここが重要です。
+      メニュー項目が画面内に収まらない場合、
+      メニュー自身がスクロールされます。
+    */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+
+    z-index: 200;
+
     opacity: 0;
     visibility: hidden;
     transform: translateY(-8px);
@@ -888,6 +915,7 @@ button {
     transform: translateY(0);
     pointer-events: auto;
   }
+
 
   .nav-list a {
     display: block;
